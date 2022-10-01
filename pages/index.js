@@ -13,6 +13,7 @@ import web4 from '../public/web4.png'
 import web5 from '../public/web5.png'
 import web6 from '../public/web6.png'
 import { useState } from 'react'
+import Link from 'next/link'
 
 
 export default function Home() {
@@ -27,7 +28,7 @@ export default function Home() {
       <main className="bg-white px-10 md:px-20 lg-px-40 dark:bg-gray-900 ">
         <section className="bg-blend-hue min-h-screen "> 
           <nav className="py-10 mb-12 flex justify-between">
-            <h1 className="text-xl font-burtons dark:text-white">Andrew Adhikari</h1>
+            <h1 className="text-xl font-burtons dark:text-white">//:NDREW</h1>
             <ul className="flex items-center">
               <li>
                 <BsFillMoonStarsFill onClick={() => setDarkMode(!darkMode)}className="cursor-pointer"/>
@@ -36,6 +37,7 @@ export default function Home() {
               
             </ul>
           </nav>
+
           <div className="text-center p-10" >
             <h2 className="text-5xl py-2 text-teal-500 font-medium md:text-6xl">Andrew Adhikari</h2>
             <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Developer and Designer</h3>
@@ -54,16 +56,16 @@ export default function Home() {
 
         <section>
           <div>
-            <h3 className="text-3xl py-1">Services I offer</h3>
-            <p className="text-md py-2 leading-8 tet-grey-800">
+            <h3 className="text-3xl py-1 text-center">Services I offer</h3>
+            <p className="text-md py-2 leading-8 tet-grey-800 text-center">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto nemo, amet <span className="text-teal-500">agencies consulted for</span> quam id vero ratione recusandae earum. Sint voluptate vitae excepturi, officia, <span className="text-teal-500">maximize</span> maxime maiores ipsa delectus esse ipsam quos id?
             </p>
-            <p className='text-md py2 leading-8 text-grey-800'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum obcaecati vel? Quos, aliquid officia labore excepturi fuga sunt aut accusantium. Blanditiis eum modi possimus ad mollitia. Voluptates, placeat consequuntur.</p>
+            <p className='text-md py2 leading-8 text-grey-800 text-center'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias harum obcaecati vel? Quos, aliquid officia labore excepturi fuga sunt aut accusantium. Blanditiis eum modi possimus ad mollitia. Voluptates, placeat consequuntur.</p>
           </div>
           <div className='lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-              <Image src={design} width={100} height={100}/>
-              <h3 className='text-lg font-medium pt-8 pb-2'>Beautiful Designs</h3>
+              <Image src={design} width={100} height={100} />
+              <h3 className='text-lg font-medium pt-8 pb-2' >Beautiful Designs <span className="bg-pink-100 text-pink-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded dark:bg-pink-200 dark:text-pink-900">Hello World Tag</span></h3>
               <p className='py-2'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, eligendi vero. Corporis autem dicta at. Alias minus placeat beatae sapiente dolore molestiae non distinctio inventore animi aliquam? Quam, doloribus molestiae?</p>
               <h4 className='py-4 text-teal-600'>Design tools i use</h4>
               <p className='text-grey-800 py-1'>Photoshop</p>
@@ -95,8 +97,8 @@ export default function Home() {
         </section>
         <section>
           <div>
-          <h3 className='text-3xl py-1'>Portfolio</h3>
-          <p className="text-md py-2 leading-8 tet-grey-800">
+          <h3 className='text-3xl py-1 text-center'>Portfolio World</h3>
+          <p className="text-md py-2 leading-8 tet-grey-800 text-center">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Architecto nemo, amet <span className="text-teal-500">agencies consulted for</span> quam id vero ratione recusandae earum. Sint voluptate vitae excepturi, officia, <span className="text-teal-500">maximize</span> maxime maiores ipsa delectus esse ipsam quos id?
             </p>
           </div>
@@ -112,40 +114,44 @@ export default function Home() {
           </div>    
         </section>
 
-        <section className='lg:flex gap-10'>
+        <section>
+
+        <div className='lg:flex gap-10'>
+        <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700  text-center p-10 my-10">
+        <a href="#"><Image src={code}/></a>
+        <div class="p-5"><a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5></a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+        </div>
+        </div>
+        <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700  text-center p-10 my-10">
+        <a href="#"><Image src={code}/></a>
+        <div class="p-5"><a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5></a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+        </div>
+        </div>
+        <div class="bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 text-center p-10 my-10">
+        <a href="#"><Image src={code}/></a>
+        <div class="p-5"><a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5></a>
+        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
+        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        </a>
+        </div>
+        </div>
+        </div>
           
-        <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-        <a href="#"><Image src={code}/></a>
-        <div class="p-5"><a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5></a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </a>
-        </div>
-        </div>
-        <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
-        <a href="#"><Image src={code}/></a>
-        <div class="p-5"><a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5></a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </a>
-        </div>
-        </div>
-        <div class="max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700 text-center p-10 my-10">
-        <a href="#"><Image src={code}/></a>
-        <div class="p-5"><a href="#"><h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Noteworthy technology acquisitions 2021</h5></a>
-        <p class="mb-3 font-normal text-gray-700 dark:text-gray-400">Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.</p>
-        <a href="#" class="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Read more <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </a>
-        </div>
-        </div>
+        
 
         </section>
         
-        <footer class="p-4 bg-white rounded-lg shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
+        <footer class="p-4 bg-white rounded-lg md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="https://andrewadhikari.com"      class="hover:underline">Andrew Adhikari</a>. All Rights Reserved.
         </span>
         <ul class="flex flex-wrap items-center mt-3 text-sm text-gray-500 dark:text-gray-400 sm:mt-0">
-        <li><a href="#" class="mr-4 hover:underline md:mr-6 ">About</a></li>
+        <li><a href="/about" class="mr-4 hover:underline md:mr-6 ">About</a></li>
         <li><a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a></li>
         <li> <a href="#" class="mr-4 hover:underline md:mr-6">Licensing</a></li>
         <li><a href="#" class="hover:underline">Contact</a></li>
